@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Users";
+}
+
+@using ViewModelFun.Models
+@model List<User>
+
+<h1>Here are some users!</h1>
+
+    @foreach(User u in Model)
+    {
+        <li>@u.FirstName @u.LastName</li>
+    }
+<ul>
+
+
+</ul>

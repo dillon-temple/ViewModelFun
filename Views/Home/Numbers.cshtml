@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Numbers";
+}
+
+@model int[];
+
+<ul>
+@foreach(int num in Model)
+{
+    <li>@num</li>
+}
+</ul>
